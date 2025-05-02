@@ -1,0 +1,60 @@
+body {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #00388d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #166dbd;
+    overflow: hidden;
+    display: flex;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4d5aa0;
+}
+.hero {
+    background-image: url('banner.jpg'); /* thay bằng ảnh banner của bạn */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.movies {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.movie {
+    background-color: white;
+    width: 220px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.movie img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
