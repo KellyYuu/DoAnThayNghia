@@ -6,7 +6,7 @@ body {
 }
 header {
     background-color: #00388d;
-    color: white;
+    color: aliceblue;
     padding: 20px;
     text-align: center;
 }
@@ -14,11 +14,12 @@ nav {
     background-color: #166dbd;
     overflow: hidden;
     display: flex;
+    justify-content: center;
 }
 nav a {
     float: left;
     display: block;
-    color: white;
+    color: aliceblue;
     padding: 14px 20px;
     text-decoration: none;
 }
@@ -26,11 +27,11 @@ nav a:hover {
     background-color: #4d5aa0;
 }
 .hero {
-    background-image: url('banner.jpg'); /* thay bằng ảnh banner của bạn */
+    background-image: url("../images/hinh1.jpg"); /* thay bằng ảnh banner của bạn */
     background-size: cover;
     background-position: center;
     height: 300px;
-    color: white;
+    color: aliceblue;
     text-align: center;
     padding-top: 100px;
 }
@@ -41,7 +42,7 @@ nav a:hover {
     justify-content: space-around;
 }
 .movie {
-    background-color: white;
+    background-color: aliceblue;
     width: 220px;
     margin: 15px;
     padding: 10px;
@@ -54,7 +55,7 @@ nav a:hover {
 }
 footer {
     background-color: #00388d;
-    color: white;
+    color: aliceblue;
     text-align: center;
     padding: 15px;
 }
