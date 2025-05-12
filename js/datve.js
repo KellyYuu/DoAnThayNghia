@@ -70,14 +70,24 @@ const PRICE = 75000;
       const lines = invoiceText.split('\n');
       lines.forEach((line, i) => ctx.fillText(line, 20, 40 + i * 30));
 
-      canvas.toBlob(function(blob) {
-        const url = URL.createObjectURL(blob);
+      if (canvas.toBlob) {
+        canvas.toBlob(function(blob) {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.download = 'hoa_don_dat_ve.png';
+          link.href = url;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+        });
+      } else {
+        const dataUrl = canvas.toDataURL('image/png');
         const link = document.createElement('a');
         link.download = 'hoa_don_dat_ve.png';
-        link.href = url;
+        link.href = dataUrl;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-      });
+      }
     }
