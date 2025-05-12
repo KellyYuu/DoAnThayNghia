@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thám Tử Kiên</title>
+    <link rel="stylesheet" href="\style\stylePhim.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="poster">
+          <img src="\images\tham-tu-kien.jpg" alt="Poster phim" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="details">
+          <h1>Thám Tử Kiên</h1>
+          <p><strong>Thời lượng:</strong> 131 phút</p>
+          <p><strong>Diễn viên:</strong> Quốc Huy, Đinh Ngọc Diệp, Quốc Anh, 
+            Anh Phạmvà Minh Anh, NSƯT Xuân Trang , NSND Mỹ Uyên</p>
+          <p><strong>Mô tả:</strong> Thám Tử Kiên là một nhân vật được yêu thích trong tác phẩm điện của ăn khách 
+            Người Vợ Cuối Cùng của Victor Vũ, Thám Tử Kiên: Kỳ Không Đầu sẽ là một phim Victor Vũ trở về với thể loại sở trường 
+            Kinh Dị - Trinh Thám sau những tác phẩm tình cảm lãng mạn trước đó. Với slogan đầy ám ảnh: 
+            “Kẻ chết không siêu thoát, người sống không lối thoát”, Thám Tử Kiên: Kỳ Án Không Đầu ẩn chứa muôn vàn bí ẩn. 
+            Một chuỗi án mạng kinh hoàng tại một ngôi làng hẻo lánh nơi liên tiếp xảy ra tám vụ giết người với cùng một đặc điểm rợn người: tất cả
+             nạn nhân đều không còn đầu.  Thám Tử Kiên phải đối mặt với vụ án khủng khiếp gây hoang mang tột độ cho dân làng. 
+             Ai sẽ là nạn nhân tiếp theo trong chuỗi án mạng rùng rợn? Kiên có tìm ra mấu chốt để lần theo dấu vết hung thủ?</p>
+        </div>
+    
+        <div class="trailer">
+          <h2>Trailer</h2>
+          <iframe src="https://www.youtube.com/embed/QiXNbEKF3U0?si=A8CBC9KcggEH7bHe" frameborder="0" allowfullscreen></iframe>
+        </div>
+    
+        <div class="schedule">
+          <h2>Lịch chiếu</h2>
+          <button onclick="showBookingForm('10:00')">10:00</button>
+          <button onclick="showBookingForm('14:00')">14:00</button>
+          <button onclick="showBookingForm('18:00')">18:00</button>
+        </div>
+    
+        <div class="booking-form" id="bookingForm" style="display: none;">
+            <h2>Đặt Vé - <span id="selectedTime"></span></h2>
+            <div class="form-group">
+              <label>Chọn ghế:</label>
+              <div class="seat-map" id="seatMap"></div>
+            </div>
+            <p>Tổng tiền: <span id="totalPrice">0</span> VND</p>
+            <button onclick="bookTickets()">Đặt vé</button>
+            <div id="successSection" class="hidden">
+              <div class="success">✔️ Đặt vé thành công!</div>
+              <button onclick="downloadInvoice()">Xem chi tiết hóa đơn</button>
+            </div>
+          </div>
+      </div>
+      <script src="\js\datve.js"></script>
+</body>
+</html>
