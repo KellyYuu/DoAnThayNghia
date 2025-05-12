@@ -21,6 +21,7 @@
             <a href="#">Lịch chiếu</a>
             <a href="#">Rạp gần bạn</a>
             <a href="#">Liên hệ</a>
+            <a href="#">Lab Thực Hành</a>
         </nav>
     
         <div class="hero">
@@ -32,44 +33,72 @@
             <div class="movie">
                 <img src="\images\tham-tu-kien.jpg" alt="Thám tử Kiên">
                 <h3>Thám tử Kiên</h3>
-                <p>Thể loại: Hành động</p>
+                <p>Thể loại: Trinh thám, Kinh dị</p>
                 <button><a href="\VeTTK.html">Đặt vé</a></button>
+            </div>
+            <div class="movie">
+                <img src="\images\Diadao.jpg" alt="Địa Đạo">
+                <h3>Địa Đạo</h3>
+                <p>Thể loại: Lịch sử, Chiến tranh</p>
+                <button><a href="\VeDD.html">Đặt vé</a></button>
             </div>
             <div class="movie">
                 <img src="\images\gia-tai-cua-ngoai.jpg" alt="Gia tài của ngoại">
                 <h3>Gia tài của ngoại</h3>
-                <p>Thể loại: Hài</p>
-                <button><a href="">Đặt vé</a></button>
+                <p>Thể loại: Hài, Gia đình</p>
+                <button><a href="\VeGTCN.html">Đặt vé</a></button>
             </div>
             <div class="movie">
                 <img src="\images\linh-hon-vu-nu.jpg" alt="Linh hồn vu nữ">
                 <h3>Linh hồn vu nữ</h3>
-                <p>Thể loại: Kinh dị</p>
-                <button><a href="">Đặt vé</a></button>
+                <p>Thể loại: Kinh dị, Tâm linh</p>
+                <button><a href="\VeLHVN.html">Đặt vé</a></button>
             </div>
             <div class="movie">
                 <img src="\images\doraemon.jpg" alt="Những gã trai hư">
                 <h3>Doraemon: Nobita Và Cuộc Phiêu Lưu Vào Thế Giới Trong Tranh</h3>
-                <p>Thể loại: Hài</p>
-                <button><a href="">Đặt vé</a></button>
+                <p>Thể loại: Hoạt hình, Thiếu nhi</p>
+                <button><a href="\VeDoraemon.html">Đặt vé</a></button>
             </div>
             <div class="movie">
                 <img src="\images\mong-vuot.jpg" alt="Móng vuốt">
                 <h3>Móng vuốt</h3>
-                <p>Thể loại: Kinh dị</p>
-                <button><a href="">Đặt vé</a></button>
+                <p>Thể loại: Kinh dị, Hồi hộp</p>
+                <button><a href="\VeMV.html">Đặt vé</a></button>
             </div>
             <div class="movie">
                 <img src="\images\nhung-ga-trai-hu-thumb.jpg" alt="Những gã trai hư">
                 <h3>Những gã trai hư</h3>
-                <p>Thể loại: Hài</p>
-                <button><a href="">Đặt vé</a></button>
+                <p>Thể loại: Hài, Hành động</p>
+                <button><a href="\VeNGTH.html">Đặt vé</a></button>
             </div>
+            
             
         </div>
     
         <footer>
             &copy; Absolute Cinema. All rights reserved.
+            <table width="100%">
+                <tr>
+                    <td>Nguyễn Thúy Hằng</td>
+                    <td>DH52200627</td>
+                </tr>
+                <tr>
+                    <td>D22-TH02</td>
+                    <td>Nhóm 5 Thứ 2 ca 2</td>
+                </tr>
+            </table>
         </footer>
+        <div id="moviePopup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span id="popupClose" class="close">&times;</span>
+                <h2 id="popupTitle"></h2>
+                <p><strong>Thể loại:</strong> <span id="popupGenre"></span></p>
+                <p><strong>Thời lượng:</strong> <span id="popupDuration"></span></p>
+                <p><strong>Khởi chiếu:</strong> <span id="popupRelease"></span></p>
+                <p><strong>Đánh giá:</strong> <span id="popupRating"></span></p>
+            </div>
+        </div>
+        <script src="\js\main.js"></script>
     </body>
     </html>
