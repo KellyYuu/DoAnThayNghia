@@ -10,6 +10,22 @@ body {
     padding: 20px;
     text-align: center;
 }
+nav {
+  background-color: #166dbd;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  float: left;
+  display: block;
+  color: aliceblue;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #4d5aa0;
+}
   .container {
     max-width: 1000px;
     margin: auto;

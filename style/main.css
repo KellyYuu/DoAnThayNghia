@@ -10,6 +10,12 @@ header {
     padding: 20px;
     text-align: center;
 }
+#pdc {
+    background-color: #00388d;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
 nav {
     background-color: #166dbd;
     overflow: hidden;
@@ -26,6 +32,7 @@ nav a {
 nav a:hover {
     background-color: #4d5aa0;
 }
+
 .hero {
     background-image: url("../images/hinh1.jpg"); /* thay bằng ảnh banner của bạn */
     background-size: cover;

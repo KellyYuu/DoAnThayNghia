@@ -1,0 +1,139 @@
+header {
+    background-color: #00388d;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #166dbd;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4d5aa0;
+}
+
+.lienhe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.lienhe h2 {
+    font-family:"Big Shoulders Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.lienhe-container {
+    width: 800px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.contact-infor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.contact-label {
+    min-width: 150px;
+    font-size: 30px;
+}
+.contact-input {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    width: 500px;
+    height: 50px;
+}
+textarea {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 500px;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    outline: none;
+}
+.contact-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-btn {
+    width: 100px;
+    height: 50px;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .lienhe-container {
+        width: 75%;
+        padding: 20px;
+    }
+    .contact-label {
+        font-size: 24px;
+        min-width: 100%;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .contact-input,
+    textarea {
+        width: 100%;
+        font-size: 18px;
+    }
+    .contact-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .lienhe {
+        padding: 20px;
+        font-size: 22px;
+    }
+    .contact-label {
+        font-size: 20px;
+    }
+    .contact-btn {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+footer {
+    background-color: #00388d;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+}

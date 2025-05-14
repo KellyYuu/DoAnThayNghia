@@ -1,0 +1,63 @@
+body {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+  }
+header {
+    background-color: #00388d;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #166dbd;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4d5aa0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .card a {
+    display: inline-block;
+    background-color: #166dbd;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 4px 4px 4px 0;
+    font-size: 0.95em;
+  }
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  .card a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  .card a:hover {
+    background-color: #125899;
+  }
+  footer {
+    background-color: #00388d;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+}
