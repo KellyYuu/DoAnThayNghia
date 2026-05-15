@@ -49,8 +49,11 @@ function bookTickets() {
     alert('Vui lòng chọn ít nhất 1 ghế.');
     return;
   }
+
+  localStorage.setItem('selectedSeats', JSON.stringify([...selectedSeats])); // Lưu danh sách ghế đã chọn
   document.getElementById('successSection').classList.remove('hidden');
 }
+
 
 function generateInvoiceImage() {
   const movieTitle = document.getElementById('movieTitle').textContent;
@@ -82,3 +85,26 @@ function generateInvoiceImage() {
   link.href = dataUrl;
   link.click();
 }
+function saveSelectedSeats() {
+  localStorage.setItem('selectedSeats', JSON.stringify([...selectedSeats]));
+}
+function restoreSelectedSeats() {
+  const savedSeats = JSON.parse(localStorage.getItem('selectedSeats')) || [];
+
+  savedSeats.forEach(seatId => {
+    const seatElements = document.querySelectorAll('.seat'); 
+    seatElements.forEach(seat => {
+      if (seat.textContent.trim() === seatId) { // Dùng trim() để tránh lỗi khoảng trắng
+        seat.classList.add('selected');
+        seat.style.backgroundColor = '#00388d'; 
+        selectedSeats.add(seatId);
+      }
+    });
+  });
+
+  updateTotal();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+      restoreSelectedSeats();
+    });
